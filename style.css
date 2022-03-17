@@ -6,10 +6,53 @@ body {
 
 .container {
   width: 90%;
-  min-height: 100vh;
+  min-height: 70vh;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.English {
+  color: #333;
+}
+
+.Spanish {
+  color: cornflowerblue;
+}
+
+.Check {
+  position: relative;
+  width: 50px;
+}
+
+.Check:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #333;
+  border-radius: 25px;
+}
+
+.Check:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: cornflowerblue;
+  border-radius: 25px;
+  transition: 0.5s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.Check:checked:before {
+  background: #333;
+}
+
+.Check:checked:after {
+  left: 25px;
+  border: 2px solid cornflowerblue;
 }
 
 .Slider {

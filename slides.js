@@ -1,3 +1,18 @@
+var check = document.querySelector(".Check");
+check.addEventListener('click', setLanguaje);
+
+function setLanguaje(){
+    let id=check.checked;
+    if(id==true){
+        location.href="spanish/index.html";
+    }
+    else{
+        location.href="../index.html"
+    }
+}
+
+
+
 (function(){
     const sliders = [...document.querySelectorAll('.SliderBody')];
     const arrowNext = document.querySelector('#next');
