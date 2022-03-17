@@ -52,7 +52,7 @@ body {
 
 .Check:checked:after {
   left: 25px;
-  border: 2px solid cornflowerblue;
+  border: 2px solid #333;
 }
 
 .Slider {
