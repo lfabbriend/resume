@@ -1,0 +1,10 @@
+I want to make an interactive and simple resume.
+
+How am I going to do this?
+-Using HTML, JS and CSS
+-Eventually, herokuapp (?
+
+How is going to be the design?
+-Simple slides with my information.
+-Each slide represents a section.
+
