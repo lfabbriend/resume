@@ -17,6 +17,11 @@ body {
   padding: 40px 0;
 }
 
+.Title {
+  font-size: 2.6rem;
+  padding: 10px;
+}
+
 .SliderContainer {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
