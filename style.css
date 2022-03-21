@@ -121,3 +121,46 @@ body {
 .sliderarrow:nth-of-type(2) {
   justify-self: end;
 }
+
+@media (max-width: 768px) {
+  .SliderBody {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 1em;
+  }
+
+  .SliderPicture {
+    grid-row: 1/2;
+  }
+
+  .SliderImg {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 425px) {
+  .SliderContainer {
+    grid-template-columns: 25px 1fr 25px;
+    grid-template-rows: max-content 1fr;
+  }
+
+  .SliderArrow {
+    width: 100%;
+  }
+
+  .SliderImg {
+    width: 180px;
+    height: 180px;
+  }
+
+  .Subtitle {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .SliderReview {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
