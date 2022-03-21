@@ -133,7 +133,6 @@ p {
   .SliderBody {
     grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr;
-    gap: 1em;
   }
 
   .SliderPicture {
@@ -146,14 +145,14 @@ p {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .SliderContainer {
-    grid-template-columns: 25px 1fr 25px;
+    grid-template-columns: 20px 1fr 20px;
     grid-template-rows: max-content 1fr;
   }
 
   .SliderArrow {
-    width: 100%;
+    width: 80%;
   }
 
   .SliderImg {
