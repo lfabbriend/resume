@@ -1,172 +1,172 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
 
 body {
-  font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 p {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.7;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
 }
 
 .container {
-  width: 90%;
-  min-height: 70vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
+    width: 90%;
+    min-height: 70vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .English {
-  color: #333;
+    color: #333;
 }
 
 .Spanish {
-  color: cornflowerblue;
+    color: cornflowerblue;
 }
 
 .Check {
-  position: relative;
-  width: 50px;
+    position: relative;
+    width: 50px;
 }
 
 .Check:before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 25px;
-  background: #333;
-  border-radius: 25px;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
 }
 
 .Check:after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background: cornflowerblue;
-  border-radius: 25px;
-  transition: 0.5s;
-  border: 2px solid #333;
-  box-sizing: border-box;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: cornflowerblue;
+    border-radius: 25px;
+    transition: 0.5s;
+    border: 2px solid #333;
+    box-sizing: border-box;
 }
 
 .Check:checked:before {
-  background: #333;
+    background: #333;
 }
 
 .Check:checked:after {
-  left: 25px;
-  border: 2px solid #333;
+    left: 25px;
+    border: 2px solid #333;
 }
 
 .Slider {
-  background-color: #f2f2f2;
-  padding: 40px 0;
+    background-color: #f2f2f2;
+    padding: 40px 0;
 }
 
 .Title {
-  font-size: 2.6rem;
-  padding: 10px;
+    font-size: 2.6rem;
+    padding: 10px;
 }
 
 .SliderContainer {
-  display: grid;
-  grid-template-columns: 50px 1fr 50px;
-  align-items: center;
-  gap: 1em;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
 }
 
 .SliderBody {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  opacity: 0;
-  pointer-events: none;
-  display: grid;
-  background-color: #f2f2f2;
-  grid-template-columns: 1fr max-content;
-  align-items: center;
-  transition: opacity 1.5s;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: #f2f2f2;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
 }
 
 .SliderBody--show {
-  opacity: 1;
-  pointer-events: unset;
+    opacity: 1;
+    pointer-events: unset;
 }
 
 .SliderText {
-  max-width: 600px;
+    max-width: 600px;
 }
 
 .Subtitle {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 .SliderReview {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.7;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
 }
 
 .SliderImg {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: auto;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
 }
 
 .SliderArrow {
-  cursor: pointer;
-  width: 90%;
+    cursor: pointer;
+    width: 90%;
 }
 
 .sliderarrow:nth-of-type(2) {
-  justify-self: end;
+    justify-self: end;
 }
 
 @media (max-width: 768px) {
-  .SliderBody {
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content 1fr;
-  }
+    .SliderBody {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+    }
 
-  .SliderPicture {
-    grid-row: 1/2;
-  }
+    .SliderPicture {
+        grid-row: 1/2;
+    }
 
-  .SliderImg {
-    width: 210px;
-    height: 210px;
-  }
+    .SliderImg {
+        width: 210px;
+        height: 210px;
+    }
 }
 
 @media (max-width: 500px) {
-  .SliderContainer {
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: max-content 1fr;
-  }
+    .SliderContainer {
+        grid-template-columns: 20px 1fr 20px;
+        grid-template-rows: max-content 1fr;
+    }
 
-  .SliderArrow {
-    width: 80%;
-  }
+    .SliderArrow {
+        width: 80%;
+    }
 
-  .SliderImg {
-    width: 180px;
-    height: 180px;
-  }
+    .SliderImg {
+        width: 180px;
+        height: 180px;
+    }
 
-  .Subtitle {
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
+    .Subtitle {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
 
-  .SliderReview {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
+    .SliderReview {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 }
